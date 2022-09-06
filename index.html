@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<div class="hero">
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type="button" class="toggle-btn" onclick="login()">
+						Login
+					</button>
+					<button type="button" class="toggle-btn" onclick="register()">
+						Register
+					</button>
+				</div>
+				<div class="social-icons">
+					<img src="./img/facebookicon.png" alt="" />
+					<img src="./img/twitterIcon.png" alt="" />
+					<img src="./img/googleIcon.png" alt="" />
+				</div>
+
+				<form action="" class="input-group" id="login">
+					<input
+						type="text"
+						class="input-field"
+						placeholder="User ID"
+						required
+					/>
+					<input
+						type="password"
+						class="input-field"
+						placeholder="Enter password"
+					/>
+					<input type="checkbox" name="checkbox" class="checkbox" required />
+					<label for="checkbox">Remember password</label>
+					<button type="submit" class="submit-btn">Login</button>
+				</form>
+
+				<form action="" class="input-group" id="register">
+					<input
+						type="text"
+						class="input-field"
+						placeholder="User ID"
+						required
+					/>
+					<input
+						type="email"
+						class="input-field"
+						placeholder="Email ID"
+						required
+					/>
+					<input
+						type="password"
+						class="input-field"
+						placeholder="Enter password"
+					/>
+					<input type="checkbox" name="checkbox" class="checkbox" required />
+					<label for="checkbox">I agree with the Terms and Conditions</label>
+					<button type="submit" class="submit-btn">Register</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
